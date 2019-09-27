@@ -7,15 +7,16 @@ import reactor.core.publisher.Mono;
 
 public interface FamilyInterface {
 
-	Flux<Family> findAll();
+  Flux<Family> findAll();
 
-	Mono<Family> findById(String id);
+  Mono<Family> findById(String id);
 
-	Mono<Family> save(Family f);
+  Mono<Family> save(Family f);
 
-	Mono<Void> delete(Family f);
+  Mono<Void> delete(Family f);
 
-	Mono<Family> findBynumberDocument(String numberDocument);
+  Mono<Family> findBynumberDocument(String numberDocument);
 
-	Mono<Family> findByFullName(String name);
+  Mono<Family> findByfullname(String fullname);
+  
 }
